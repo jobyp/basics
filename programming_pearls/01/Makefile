@@ -8,7 +8,7 @@ bitmap : bitmap.h
 random : bitmap.h
 
 % : %.c
-	gcc -Wall -O3 -std=gnu11 -o $@ $<
+	gcc -Wall -O3 -std=c99 -o $@ $<
 
 .PHONY: clean
 clean:

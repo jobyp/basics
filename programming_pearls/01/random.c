@@ -1,10 +1,11 @@
+#define _SVID_SOURCE 1
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "bitmap.h"
 
 #define N 10000000
-
+#define NUMBER_OF_RANDOM_NUMBERS (N / 10)
 
 int main()
 {
@@ -16,7 +17,7 @@ int main()
 	for(unsigned i = 0 ; i < N; i++)
 		reset_bit(bitmap, i);
 
-	for(unsigned i = 0; i < N;)
+	for(unsigned i = 0; i < NUMBER_OF_RANDOM_NUMBERS;)
 	{
 		number = random();
 		/* printf("---> %u\n", number); */
